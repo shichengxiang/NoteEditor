@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+	<data>
+
+		<variable
+			name="userName"
+			type="String"/>
+
+		<variable
+			name="user"
+			type="com.myfirst.note.noteeditor.entities.GetBeans.Result"/>
+
+		<import type="android.view.View"/>
+		<import type="com.myfirst.note.noteeditor.Util" alias="util"/>
+	</data>
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				  android:layout_width="match_parent"
+				  android:layout_height="match_parent"
+				  android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/rl_main"
+			android:layout_width="200dp"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="50dp"
+			android:background="@color/red_ff725f"
+			android:text="@{userName}"
+			android:textSize="@dimen/dpdd"/>
+
+		<TextView
+			android:id="@+id/tv"
+			android:layout_width="200dp"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="50dp"
+			android:background="@color/red_ff725f"
+			android:text='@={user.msg}'
+			android:textSize="@dimen/dpdd"/>
+		<Button
+			android:id="@+id/button"
+			android:layout_width="200dp"
+			android:layout_height="100dp"
+			android:text="button"
+			android:background="@color/bg_home"/>
+
+		<TextView
+			android:id="@+id/orderType"
+			android:layout_width="200dp"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="50dp"
+			android:background="@color/red_ff725f"
+			android:ellipsize="marquee"
+			android:lines="1"
+			android:marqueeRepeatLimit="marquee_forever"
+			android:text="djfajdfjadfjjdfja     djfjdfjdajfjdaf d    dfajf"
+			android:textSize="@dimen/dpdd"/>
+
+		<EditText
+			android:id="@+id/etUsername"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+			android:hint="请输入用户名"
+			android:text="@={user.msg}"
+			android:textColor="@color/orange"
+			android:textSize="12dp"/>
+
+
+		<TextView
+			android:id="@+id/tv_content"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+
+		<ImageView
+			android:id="@+id/iv_image"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@color/gray_bbbbbb"/>
+
+	</LinearLayout>
+</layout>

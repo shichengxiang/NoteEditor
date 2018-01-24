@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+			  android:orientation="vertical">
+
+	<android.support.v7.widget.Toolbar
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/colorPrimary"
+		style="@style/ClubToolbar"
+		android:fitsSystemWindows="true">
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:padding="5dp"
+				android:text="笔记"
+				android:textColor="#ffffff"
+				android:textSize="@dimen/dp15"/>
+		</RelativeLayout>
+	</android.support.v7.widget.Toolbar>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/bg_home"
+		android:orientation="vertical">
+
+		<RelativeLayout
+			android:id="@+id/view_displayCalendar"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+
+			<TextView
+				android:id="@+id/tv_recordCalendar"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="@dimen/dp10"
+				android:text="日程"
+				android:textColor="@color/colorAccent"
+				android:textStyle="bold"/>
+
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_toRightOf="@id/tv_recordCalendar"
+				android:rotation="270"
+				android:src="@android:drawable/arrow_down_float"/>
+
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+
+			<TextView
+				android:id="@+id/tv_always"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="@dimen/dp10"
+				android:text="常用"
+				android:textColor="@color/colorAccent"
+				android:textStyle="bold"/>
+
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_toRightOf="@id/tv_always"
+				android:rotation="270"
+				android:src="@android:drawable/arrow_down_float"/>
+
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+
+			<TextView
+				android:id="@+id/tv_category"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="@dimen/dp10"
+				android:text="快速查找"
+				android:textColor="@color/colorAccent"
+				android:textStyle="bold"/>
+
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_toRightOf="@id/tv_category"
+				android:src="@android:drawable/ic_menu_search"/>
+
+		</RelativeLayout>
+
+	</LinearLayout>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:text="home a a  a"/>
+
+</LinearLayout>

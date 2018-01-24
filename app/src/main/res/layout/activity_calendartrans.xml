@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  xmlns:app="http://schemas.android.com/apk/res-auto"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+			  android:orientation="vertical">
+
+	<android.support.v7.widget.Toolbar
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/colorPrimary"
+		android:clipToPadding="true"
+		android:contentInsetStart="0dp"
+		android:fitsSystemWindows="true">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:padding="@dimen/dp8"
+				android:text="日程记录"
+				android:textColor="@color/white"
+				android:textSize="@dimen/dp14"/>
+		</RelativeLayout>
+	</android.support.v7.widget.Toolbar>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="25dp"
+		android:layout_alignParentBottom="true"
+		android:orientation="horizontal"
+		android:background="@color/colorPrimary">
+
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:text="日"
+			android:textColor="#ffffff"
+			android:textSize="13sp"/>
+
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:text="一"
+			android:textColor="#ffffff"
+			android:textSize="13sp"/>
+
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:text="二"
+			android:textColor="#ffffff"
+			android:textSize="13sp"/>
+
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:text="三"
+			android:textColor="#ffffff"
+			android:textSize="13sp"/>
+
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:text="四"
+			android:textColor="#ffffff"
+			android:textSize="13sp"/>
+
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:text="五"
+			android:textColor="#ffffff"
+			android:textSize="13sp"/>
+
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:text="六"
+			android:textColor="#ffffff"
+			android:textSize="13sp"/>
+	</LinearLayout>
+
+	<com.necer.ncalendar.calendar.NCalendar
+		android:id="@+id/nCalendar"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		app:hollowCircleColor="@color/white"
+		app:defaultCalendar="Month"
+		app:firstDayOfWeek="Sunday"
+		app:isMultiple="false"
+		app:selectCircleColor="#3388ff"
+		android:background="@color/bg">
+
+		<android.support.v7.widget.RecyclerView
+			android:id="@+id/recyclerView"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@color/white"/>
+
+	</com.necer.ncalendar.calendar.NCalendar>
+
+</LinearLayout>
